@@ -1,0 +1,249 @@
+body{
+    background-color: rgb(83, 10, 10);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.shadow{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.firstimg img{
+    margin-top: 26px;
+    margin-left: 30%;
+    width: 40%;
+}
+
+.firstimg img:hover{
+    cursor: pointer;
+    border-radius: 10px;
+    transform: scale(1.05);
+}
+
+.heading{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Arial Black','Impact',sans-serif;
+    color: #ffaa33;
+    text-shadow: 5px 5px #aa3300;
+    letter-spacing: 4px;
+    margin-top: 20px;
+    transition: .3s;
+}
+
+.heading:hover{
+    transform: scale(1.02);
+    text-shadow: 5px 5px #cc4400;
+    cursor: pointer;
+}
+
+.subhead{
+    font-size: 22px;
+    color: #ffdd99;
+    font-family: 'Courier New', monospace;
+    border-top: .5px solid #ffaa55;
+    border-bottom: .5px solid #ffaa55;
+    margin-top: 15px;
+}
+
+.subheadbox{
+    display: flex;
+    justify-content: center;
+}
+
+.gengrid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    margin: 50px;
+}
+
+.wtv{
+    padding: 50px;
+    border: 1px solid rgb(154,154,154);
+    border-radius: 10px;
+    text-align: center;
+    transition: .3s;
+
+    opacity: 0;
+    animation: slideIn .8s ease forwards;
+}
+.wtv:nth-child(1){
+    animation-delay: .2s;
+}
+
+.wtv:nth-child(2){
+    animation-delay: .6s;
+}
+
+.wtv:nth-child(3){
+    animation-delay: 1s;
+}
+.wtv:hover {
+transform: translate(10px);
+cursor: pointer;
+}
+
+.gengrid .wtv:nth-child(1){
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJDHEzVP16NvcbdAJs3y0PTN1AU0j2zwFfHLY2R3uFIQ&s");
+    background-size: cover;
+}
+
+.gengrid .wtv:nth-child(2){
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtMRazRrAIhV4PJpyEjRHJf88Wptp3k7d3cTDfKkDgHQ&s=10");
+    background-size: cover;
+}
+
+.gengrid .wtv:nth-child(3){
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjw9pFEwLgdtwHBUN5wkFG0vuhuSUGpFbI6txWDoiwlw&s=10");
+    background-size: cover;
+}
+
+.name{
+    color: white;
+    margin-bottom: 80px;
+}
+
+.gentype{
+    color: #fffefd;
+}
+
+.footer{
+    text-align: center;
+    color: #c7a78b;
+}
+
+.hmbtn{
+    margin-top: 10%;
+    background: rgb(20,20,20);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 2rem;
+    transition: .3s;
+}
+
+.hmbtn:hover{
+    transform: translate(5px);
+}
+
+.acthead{
+    font-size: 52px;
+    text-align: center;
+    color: #fac208e1;
+    font-family: 'Bebas Neue','Impact',sans-serif;
+    letter-spacing: 4px;
+}
+
+.actgrid{
+    display: grid;
+    gap: 20px;
+}
+
+.actcard,
+.scicard,
+.hrcard{
+    border-radius: 16px;
+    transition: .3s;
+}
+
+.actcard{
+    background: rgba(0,0,0,.5);
+    padding: 20px;
+}
+
+.actcard:hover{
+    cursor: pointer;
+    transform: scale(1);
+    background: rgb(200,157,77);
+}
+
+.actcard h3{
+    color: #ff6600;
+    margin-bottom: 10px;
+}
+
+.actcard p{
+    color: #363433;
+    margin-bottom: 5px;
+}
+
+.scihead{
+    text-align: center;
+    font-size: 55px;
+    color: #00ccff;
+    font-family: 'Impact','Arial Black',sans-serif;
+    text-shadow:
+        3px 3px 0 #084e7d,
+        6px 6px 0 #003366,
+        0 0 15px rgba(0,200,255,.8);
+    letter-spacing: 5px;
+    margin-top: 20px;
+}
+
+.scifipg{
+    background: linear-gradient(135deg,#0a0a2a,#0d1b3e,#0a0a2a);
+    min-height: 100vh;
+}
+
+.scicard{
+    border: 1px solid #3366ff;
+    box-shadow: 0 0 15px rgba(51,102,255,.2);
+}
+
+.scicard:hover{
+    transform: scale(1.02);
+    background: rgb(77,118,200);
+}
+
+.scicard h3{
+    color: #66ccff;
+}
+
+.horror{
+    text-align: center;
+    font-size: 55px;
+    color: #cc0000;
+    font-family: 'Impact','Arial Black',sans-serif;
+    text-shadow:
+        3px 3px 0 #660000,
+        6px 6px 0 #330000,
+        0 0 15px rgba(255,0,0,.5);
+    letter-spacing: 5px;
+    margin-top: 20px;
+}
+
+.hrcard{
+    border: 1px solid #cc0000;
+    box-shadow: 0 0 15px rgba(204,0,0,.2);
+}
+
+.hrcard:hover{
+    transform: scale(1.02);
+    background: rgb(192,17,17);
+}
+
+@media (max-width:800px){
+    .gengrid{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .wtv{
+        padding: 30px 20px;
+    }
+}
+
+@keyframes slideIn{
+    from{
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
